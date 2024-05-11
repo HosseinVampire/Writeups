@@ -37,10 +37,11 @@ python 51993.py  -u http://192.168.1.113:8080 -p /etc/passwd
 ```
 users that have bash : Root , kali , penetration 
 *i serched a lot for id_rsa or any password but nothing ...*
-```
-i spend a 30 min to figure the solution of gettin a shell it  .   Thanks to my friend **ll104567**
-
+i spend a 30 min to figure the solution of gettin a shell it  .   
 from the name of machine i thought that password might be a silly  so ...
+```
+
+
 ## Hydra
 **hydra -l kali -P /usr/share/wordlists/seclists/Passwords/500-worst-passwords.txt  ssh://192.168.1.113**
 ![hydrapassword](images/hydra.png)
@@ -67,3 +68,9 @@ DONE :)
 ```
 it is my first write up, im sorry if i explained bad <3
 ```
+
+
+
+## thanks to my friend ll104567 for tips 
+### you can check his bilibili url 
+its his biliblii url : [site](https://space.bilibili.com/20805349)

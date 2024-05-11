@@ -1,4 +1,4 @@
-# ASDQWE
+# qweasd
 **network discovery**
 ```
 I usually use __Fping__ command to watch active machines in my network  

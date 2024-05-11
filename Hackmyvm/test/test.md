@@ -1,2 +1,2 @@
 # hi 
-![asd](/img/fping.png)
+![asd](../img/fping.png)

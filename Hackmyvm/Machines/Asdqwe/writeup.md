@@ -1,3 +1,3 @@
 # hack
 
-![image](/image/hydrapassword.png)
+![image](image/hydrapassword.png)

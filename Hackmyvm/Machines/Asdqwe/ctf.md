@@ -51,7 +51,7 @@ from the name of machine i thought that password might be a silly  so ...
 Getting root was easy 
 check  capabilities and got below results :
 ```
-[cap](images/setuiddiscovery.png)
+![cap](images/setuiddiscovery.png)
 ```
 Find *GDB* command that got capabilities 
 ```

@@ -5,4 +5,4 @@
 **Captch level one was pretty easy , only need is understanding basic python and pytesseract module**
 
 
-![image](/images.png)
+![image](images.png)

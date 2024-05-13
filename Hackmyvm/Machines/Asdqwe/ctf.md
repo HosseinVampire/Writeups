@@ -73,4 +73,4 @@ it is my first write up, im sorry if i explained bad <3
 
 ## thanks to my friend ll104567 for tips 
 ### you can check his bilibili url 
-its his biliblii url : [site](https://space.bilibili.com/20805349)
+[Bilibili](https://space.bilibili.com/20805349)

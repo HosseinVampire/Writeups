@@ -246,7 +246,7 @@ we got strange files in /opt directory
 so i guess it might be crontab privesc 
 lets find out  ...
 ```
-[pspy - unprivileged Linux process snooping]("https://github.com/DominicBreuker/pspy")
+[pspy - unprivileged Linux process snooping]: "https://github.com/DominicBreuker/pspy"
 
 ```bash
     pspy installation 
@@ -308,8 +308,7 @@ Matching Defaults entries for analyst on Chromatica:
 User analyst may run the following commands on Chromatica:
     (ALL : ALL) NOPASSWD: /usr/bin/nmap
 ```
-
-lets check [GTFO]("https://gtfobins.github.io/gtfobins/nmap/")
+[GTFO]: https://gtfobins.github.io/gtfobins/nmap/"
 
 ```
 Shell

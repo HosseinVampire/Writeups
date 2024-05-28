@@ -13,10 +13,9 @@ created by || mao7un
 
 ``` 
 Cipher of symbols  , easy to decode ...
-https://www.dcode.fr/dni-numerals
 enter the symbols and get the flag 
 ```
-
+https://www.dcode.fr/dni-numerals
 # Flag
 ```
 HMV{13377331}

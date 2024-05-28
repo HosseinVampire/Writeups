@@ -11,7 +11,7 @@ created by || mao7un
 
 ![cipher](img/challenge.png)
 
-[CLICK_TO_DECODE]("https://www.dcode.fr/dni-numerals")
+[CLICK_TO_DECODE](https://www.dcode.fr/dni-numerals)
 ``` 
 Cipher of symbols  , easy to decode ...
 enter the symbols and get the flag 

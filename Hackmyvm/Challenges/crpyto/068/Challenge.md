@@ -20,4 +20,4 @@ I found a site to decode the text
 https://holloway.nz/steg/
 
 # Flag
->asdhmvgreetings_from_green_br0ther
+>hmvgreetings_from_green_br0ther
